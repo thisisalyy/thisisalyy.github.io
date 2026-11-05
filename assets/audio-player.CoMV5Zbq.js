@@ -1,0 +1,1 @@
+let e=null;function u(t,l){t.addEventListener("play",()=>{e&&e!==t&&e.pause(),document.querySelectorAll("video").forEach(n=>{!n.muted&&!n.paused&&n.pause()}),e=t}),t.addEventListener("ended",()=>{e===t&&(e=null)})}function s(){e&&!e.paused&&e.pause()}export{s as p,u as r};
